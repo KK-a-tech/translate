@@ -6,14 +6,14 @@ $default_source = 'ja';
 $default_target = 'en';
 
 if ($_POST) {
-		$result = translate(
-				$_POST['text'],
-				$_POST['source'],
-				$_POST['target']
-		);
+    $result = translate(
+        $_POST['text'],
+        $_POST['source'],
+        $_POST['target']
+    );
 } else {
-		$_POST['source'] = $default_source;
-		$_POST['target'] = $default_target;
+    $_POST['source'] = $default_source;
+    $_POST['target'] = $default_target;
 }
 ?>
 
